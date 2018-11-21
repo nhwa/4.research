@@ -189,27 +189,43 @@
         <div class="wrap">
             <div class="contents">
                 <div class="research_content">
-                   <div class="subp-title"><h2 data-langNum="60">설문조사 안내</h2>
+                   <div class="subp-title"><h2 data-langNum="61">설문조사 안내</h2>
                     </div>
                     <div class="f-box">
                         <ul class="">
-                        <li data-langNum="61">간단한 설문에 참여하시면 와이파이를 무료로 이용하실 수 있습니다.</li>
+                        <li data-langNum="62">간단한 설문에 참여하시면 와이파이를 무료로 이용하실 수 있습니다.</li>
                         </ul> 
                     </div><form id="" action="" method="post">
                     <div class="s-box">
                      <div class="research">
-                      <div class="b_title"><span>01</span> <span data-langNum="62">설문참여자 거주지 설문</span><span class="menu-arrow"></span>
+                      <div class="b_title"><span>01</span> <span data-langNum="63">설문참여자 거주지 설문</span><span class="menu-arrow"></span>
                       </div>
                       <div class="question">
                       <div class="question_title">
-                          <span data-langNum="63">현재 제주특별자치도민인가요?</span>
+                          <span data-langNum="64">현재 제주특별자치도민인가요?</span>
                       </div>
-                     <select name="research_select" id="selectResearch" class="wide">
-                     <option value="write" selected data-langNum="64">선택</option>
-                                 <option value="yes" data-langNum="65">그렇다</option>
-                                 <option value="no" data-langNum="66">아니다</option>
-                                 <option value="I don't know" data-langNum="67">모르겠다</option>
-                    </select>
+                        <div class="research-group">
+                            <input id="yes" type="radio" name="research" value="yes"/> <label for="yes" data-langNum="65">그렇다</label><input id="no" type="radio" name="research" value="no" /><label for="no" data-langNum="66">아니다</label>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="s-box">
+                     <div class="research">
+                      <div class="b_title"><span>02</span> <span data-langNum="67">관광지 방문 여부 설문</span><span class="menu-arrow"></span>
+                      </div>
+                      <div class="question">
+                      <div class="question_title">
+                          <span data-langNum="68">방문했던 관광지를 모두 고르시오</span>
+                      </div>
+                        <div class="research-group">
+                            <input id="SeongsanIlchulbong" type="checkbox" name="research" value="SeongsanIlchulbong"/>
+                            <label for="SeongsanIlchulbong" data-langNum="69">성산일출봉</label>
+                            <input id="Hallasan" type="checkbox" name="research" value="Hallasan" />
+                            <label for="Hallasan" data-langNum="70">한라산</label>
+                            <input id="CheonjiyeonFalls" type="checkbox" name="research" value="CheonjiyeonFalls" />
+                            <label for="CheonjiyeonFalls" data-langNum="71">천지연폭포</label>
+                        </div>
                       </div>
                       </div>
                     </div>
@@ -280,11 +296,11 @@
   <div id="layer4" class="layer-wrap">
     <div class="pop-layer">
         <div class="pop-container">
-           <div class="pop_header" data-langNum="68">
+           <div class="pop_header" data-langNum="59">
                응답확인
            </div>
             <div class="pop-conts">
-                <p data-langNum="69">아직 설문응답을 하지 않은 항목이 있습니다.</p>
+                <p data-langNum="60">아직 설문응답을 하지 않은 항목이 있습니다.</p>
                 <div class="btn-r">
                     <div class="btn-layerClose1" data-langNum="58">닫기</div>
                 </div>
@@ -368,17 +384,19 @@ $(function(){
         56: "등록확인",
         57: "입력한 정보가 정상적으로 반영되었습니다.<br/>다음 화면으로 이동합니다.",
         58: "닫기",
-        59 : "무료 Wi-Fi를 이용하실 수 있습니다.",
-        60:"설문조사 안내",
-        61:"간단한 설문에 참여하시면 와이파이를 무료로 이용하실 수 있습니다.",
-        62:"설문참여자 거주지 설문",
-        63:"현재 제주특별자치도민인가요?",
-        64:"선택",
-        65:"그렇다",
-        66:"아니다",
-        67:"모르겠다",
-        68:"응답확인",
-        69:"아직 설문응답을 하지 않은 항목이 있습니다."
+        59: "응답확인",
+        60: "아직 설문응답을 하지 않은 항목이 있습니다.",
+        61: "설문조사 안내",
+        62: "간단한 설문에 참여하시면 와이파이를 무료로 이용하실 수 있습니다.",
+        63: "설문참여자 거주지 설문",
+        64: "현재 제주특별자치도민인가요?",
+        65: "그렇다",
+        66: "아니다",
+        67: "관광지 방문 여부 설문",
+        68: "방문했던 관광지를 모두 고르시오",
+        69: "성산일출봉",
+        70: "한라산",
+        71: "천지연폭포"
     };
     $.lang.en = {
         0: "You can enjoy free Wi-Fi service anywhere in Jeju.",
@@ -440,18 +458,20 @@ $(function(){
         56: "Registration confirmation",
         57: "The information you entered was reflected correctly. Go to the next screen.",
         58: "Close",
-        59: "You can use a free Wi-Fi.",
-        60:"Survey Guide",
-        61:"If you participate the simple survey, you can use Wi-Fi for free.",
-        62:"The survey on residence",
-        63:"Are you a resident of Jeju?",
-        64:"choice",
-        65:"Yes",
-        66:"No",
-        67:"I don't know",
-        68:"Response check",
-        69:"There are some items that have not yet been answered."
-        
+        59: "Response check",
+        60: "There are some items that have not yet been answered.",
+        61: "Survey Guide",
+        62: "If you participate the simple survey, you can use Wi-Fi for free.",
+        63: "A survey on residence",
+        64: "Are you a resident of Jeju?",
+        65: "Yes",
+        66: "No",
+        67: "A survey on the tourist spots",
+        68: "Choose all the tourist spots you visited",
+        69: "Seongsan Ilchulbong",
+        70: "Hallasan",
+        71: "Cheonjiyeon Falls"
+       
     };
     
     $.lang.ja = {
@@ -514,17 +534,19 @@ $(function(){
         56: "登録確認",
         57: "入力した情報が正常に反映されました。<br/>次の画面に移動します。",
         58: "終了",
-        59: "無料ワイファイを利用できます。",
-        60:"アンケートガイド",
-        61:"簡単なアンケートに参加すると,ワイファイを無料でご利用いただけます。",
-        62:"居住地アンケート",
-        63:"現在済州島民ですか。",
-        64:"選択",
-        65:"はい",
-        66:"いいえ",
-        67:"わかりません",
-        68:"応答確認",
-        69:"まだ設問回答をしていない項目があります。",
+        59: "応答確認",
+        60: "まだ設問回答をしていない項目があります。",
+        61: "アンケートガイド",
+        62: "簡単なアンケートに参加すると,ワイファイを無料でご利用いただけます。",
+        63: "居住地アンケート",
+        64: "現在済州島民ですか?",
+        65: "はい",
+        66: "いいえ",
+        67: "観光地訪問可否アンケート",
+        68: "あなたが訪れた観光地をすべて選びなさい",
+        69: "ソンサンイルチュルボン",
+        70: "ハンラサン",
+        71: "チョンジヨン・ポクポ"
     };
      $.lang.cn = {
         0: "在济州任何地方都可以享受免费Wi-Fi服务。",
@@ -586,17 +608,19 @@ $(function(){
         56: "登记确认",
         57: "输入的信息已正常反映。<br/>移动到下一页。",
         58: "关闭",
-        59: "可以使用免费wifi。",
-        60:"问卷指南",
-        61:"参与简单的问卷调查可以免费使用wifi。",
-        62:"居住地问卷",
-        63:"现在济州岛居民吗?",
-        64:"选择",
-        65:"是的",
-        66:"不是",
-        67:"我不知道",
-        68:"应答确认",
-        69:"还有一些项目没有回答。",
+        59: "应答确认",
+        60: "还有一些项目没有回答。",
+        61: "问卷指南",
+        62: "参与简单的问卷调查可以免费使用wifi。",
+        63: "居住地问卷",
+        64: "现在济州岛居民吗?",
+        65: "是的",
+        66: "不是",
+        67: "访问旅游景点的问卷调查",
+        68: "把你找到的观光地全部选出来",
+        69: "城山日出峰",
+        70: "汉拿山",
+        71: "天地渊瀑布"
     };
     $.lang.tw = {
         0: "在濟州任何地方都可以享受免費Wi-Fi服務。",
@@ -658,17 +682,19 @@ $(function(){
         56: "登記確認",
         57: "輸入的信息已正常反映。<br/>移動到下一頁。",
         58: "關閉",
-        59: "可以使用免費wifi。",
-        60:"問卷指南",
-        61:"參與簡單的問卷調查可以免費使用wifi",
-        62:"居住地問卷",
-        63:"現在濟州島居民嗎?",
-        64:"選擇",
-        65:"是的",
-        66:"不是",
-        67:"我不知道",
-        68:"應答確認",
-        69:"還有一些項目沒有回答。",
+        59: "應答確認",
+        60: "還有一些項目沒有回答。",
+        61: "問卷指南",
+        62: "參與簡單的問卷調查可以免費使用wifi",
+        63: "居住地問卷",
+        64: "現在濟州島居民嗎?",
+        65: "是的",
+        66: "不是",
+        67: "訪問旅遊景點的問卷調查",
+        68: "把你找到的觀光地全部選出來",
+        69: "城山日出峯",
+        70: "漢拿山",
+        71: "天地淵瀑布"
     };
     $('[data-langNum]').each(function() {
     var $this = $(this); 
